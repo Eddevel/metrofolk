@@ -9,17 +9,6 @@ import AnimatedProductGrid from "@/components/AnimatedProductGrid";
 import Image from "next/image";
 import { Loader2, Package2 } from "lucide-react";
 
-export async function generateStaticParams() {
-  try {
-    const snap = await getDocs(collection(db, "products"));
-    return snap.docs.map((doc) => ({
-      slug: doc.id,
-    }));
-  } catch (error) {
-    console.error("Failed to generate params:", error);
-    return [];
-  }
-}
 const categoryTitles: Record<string, string> = {
   "low-voltage-panels": "Low Voltage Panels",
   "medium-voltage-switchboard": "Medium Voltage Switchgear",
@@ -60,7 +49,7 @@ export default function CategoryProducts() {
 
   return (
     <>
-    
+      {/* EPIC HERO — NOW IDENTICAL TO /products */}
       <section className="relative overflow-hidden bg-gradient-to-r from-secondary ">
         <div className="absolute inset-0 bg-black/80" />
         <div className="absolute inset-0">
