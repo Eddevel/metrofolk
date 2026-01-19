@@ -5,7 +5,42 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 First, run the development server:
 
 ```bash
-npm run dev
+npm run dev# Metrofolk Energy Ltd – Renewable Energy Solutions in Nigeria
+
+![Metrofolk Hero](public/images/hero-bg.jpg)
+
+Metrofolk is a modern e-commerce platform for renewable energy solutions in Nigeria. We provide affordable, high-quality solar panels, inverters, batteries, cables, LV/MV switchgear, and packaged equipment — with seamless cart, payment (Paystack), Firebase authentication, and real-time order tracking.
+
+Live site: https://www.metrofolk.ng  
+Domain: https://metrofolk.ng 
+
+## Features
+
+- 🛒 Full shopping cart with localStorage + Firebase sync for logged-in users
+- 💳 Secure payments via Paystack (card, popup)
+- 🔐 Firebase Authentication (login, register, forgot password, dashboard)
+- 📦 Real-time order tracking in customer dashboard
+- 🛍️ Product categories (inverters, solar panels, batteries, etc.)
+- 🔍 Search & filter products
+- 📱 Responsive design (mobile-first)
+- 🌍 Nigerian-focused (₦ currency, local delivery, pay on delivery option)
+- 📈 Admin dashboard (manage products, orders, quotes, blog)
+- 🛡️ Sold-out overlay on products
+- 📊 Installment plan tracking with progress bar
+
+## Tech Stack
+
+- **Frontend**: Next.js 16 (App Router), React, TypeScript
+- **Styling**: Tailwind CSS + Shadcn/UI
+- **Backend/Database**: Firebase (Firestore, Authentication, Storage)
+- **Payments**: Paystack
+- **Icons**: Lucide React
+- **State Management**: React Context (cart), Firebase hooks
+- **Deployment**: Vercel
+- **Other**: Sonner (toasts), Framer Motion (animations)
+
+## Project Structure
+
 # or
 yarn dev
 # or
@@ -34,3 +69,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
