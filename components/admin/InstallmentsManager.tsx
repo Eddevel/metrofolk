@@ -232,7 +232,7 @@ export default function InstallmentsManager() {
                   </div>
 
                   <div className="space-y-4 text-center">
-                    <div className="text-2xl font-black md:text-3xl">
+                    <div className="text-2xl text-primary md:text-3xl">
                       Paid: <span className="text-green-600">₦{order.paidAmount.toLocaleString()}</span> | 
                       Remaining: <span className="text-red-600">₦{order.remainingAmount.toLocaleString()}</span>
                     </div>
@@ -268,7 +268,7 @@ export default function InstallmentsManager() {
                   <div className="flex flex-col gap-6">
                     {order.remainingAmount > 0 && (
                       <div className="rounded-3xl border-4 border-green-600 bg-green-50 p-6">
-                        <h3 className="mb-6 text-center text-2xl font-black">Record Payment</h3>
+                        <h3 className="mb-6 text-center text-2xl text-primary">Record Payment</h3>
                         <div className="flex flex-col items-center gap-4">
                           <Input
                             type="number"
