@@ -217,22 +217,22 @@ export default function InstallmentsManager() {
                     <div className="flex items-center gap-3">
                       <User className="h-8 w-8 text-purple-600" />
                       <div>
-                        <p className="font-bold">{order.userEmail}</p>
-                        <p className="text-sm text-gray-600">{order.customerName || "Customer"}</p>
+                        <p className="font-bold text-black">{order.userEmail}</p>
+                        <p className="text-sm text-black">{order.customerName || "Customer"}</p>
                       </div>
                     </div>
                     <div className="flex items-center gap-3">
                       <Phone className="h-8 w-8 text-purple-600" />
-                      <p className="font-bold">{order.phoneNumber}</p>
+                      <p className="font-bold text-black">{order.phoneNumber}</p>
                     </div>
                     <div className="flex items-center gap-3">
                       <Calendar className="h-8 w-8 text-purple-600" />
-                      <p className="font-bold">Next: {order.installmentPlan.nextDueDate || "—"}</p>
+                      <p className="font-bold text-black">Next: {order.installmentPlan.nextDueDate || "—"}</p>
                     </div>
                   </div>
 
                   <div className="space-y-4 text-center">
-                    <div className="text-2xl text-primary md:text-3xl">
+                    <div className="text-2xl font-black text-black md:text-3xl">
                       Paid: <span className="text-green-600">₦{order.paidAmount.toLocaleString()}</span> | 
                       Remaining: <span className="text-red-600">₦{order.remainingAmount.toLocaleString()}</span>
                     </div>
@@ -250,12 +250,12 @@ export default function InstallmentsManager() {
                     <div className="rounded-2xl border-2 border-gray-300 bg-gray-50 p-6">
                       <div className="mb-4 flex items-center gap-3">
                         <History className="h-7 w-7 text-purple-600" />
-                        <h3 className="text-2xl font-black">Payment History</h3>
+                        <h3 className="text-2xl font-black text-black">Payment History</h3>
                       </div>
                       <div className="space-y-3">
                         {order.installmentPlan.payments.map((p, i) => (
-                          <div key={i} className="flex flex-col rounded-lg border bg-white p-4 text-center sm:flex-row sm:justify-between sm:text-left">
-                            <span className="font-bold text-lg">₦{p.amount.toLocaleString()}</span>
+                          <div key={i} className="flex flex-col rounded-lg border bg-white p-4 text-center  sm:flex-row sm:justify-between sm:text-left">
+                            <span className="font-bold text-black text-lg">₦{p.amount.toLocaleString()}</span>
                             <span className="text-gray-600">
                               {format(p.date instanceof Date ? p.date : new Date(), "dd MMM yyyy")}
                             </span>
@@ -268,7 +268,7 @@ export default function InstallmentsManager() {
                   <div className="flex flex-col gap-6">
                     {order.remainingAmount > 0 && (
                       <div className="rounded-3xl border-4 border-green-600 bg-green-50 p-6">
-                        <h3 className="mb-6 text-center text-2xl text-primary">Record Payment</h3>
+                        <h3 className="mb-6 text-center text-2xl font-black text-black">Record Payment</h3>
                         <div className="flex flex-col items-center gap-4">
                           <Input
                             type="number"
@@ -278,7 +278,7 @@ export default function InstallmentsManager() {
                           />
                           <Button
                             size="lg"
-                             className="h-16 w-full max-w-xs text-2xl font-bold bg-green-600 hover:bg-green-700"
+                             className="h-16 w-full max-w-xs text-2xl font-bold bg-green-600 hover:bg-green-700 text-white"
                             onClick={() => {
                               const input = document.getElementById(`pay-${order.id}`) as HTMLInputElement;
                               if (!input || !input.value) return;
