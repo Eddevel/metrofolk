@@ -19,17 +19,22 @@ export const metadata: Metadata = {
   },
   description: "Affordable solar and electrical power solutions for homes and businesses in Nigeria.",
   openGraph: {
-    images: "/images/hero-bg.jpg",
+    title: "Metrofolk",
+    description: "Renewable Energy Solutions in Nigeria",
+    url: "https://metrofolk.ng",
+    siteName: "Metrofolk",
+    type: "website",
+    images: "/images/3.svg",
   },
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://metrofolk.com"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://metrofolk.ng"),
 };
 
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Metrofolk Limited",
-  "url": "https://metrofolk.org",
-  "logo": "https://metrofolk.org/logo.png",
+  "url": "https://metrofolk.ng",
+  "logo": "https://metrofolk.ng/3.svg",
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": "+234-705-069-8372", 
