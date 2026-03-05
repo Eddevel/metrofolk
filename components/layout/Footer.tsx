@@ -10,7 +10,6 @@ import {
   Facebook, 
   Instagram, 
   Twitter, 
-  Linkedin,
   ArrowRight
 } from "lucide-react";
 import Image from "next/image";
@@ -74,7 +73,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-[#4ca626] " />
-                <span>info@metrofolk.com</span>
+                <span>info@metrofolk.ng</span>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="h-5 w-5 text-[#4ca626] " />
@@ -85,10 +84,9 @@ export default function Footer() {
             {/* Social Icons */}
             <div className="flex gap-4 pt-4">
               {[
-                { Icon: Facebook, href: "https://facebook.com/metrofolk" },
-                { Icon: Instagram, href: "https://instagram.com/metrofolk" },
-                { Icon: Twitter, href: "https://twitter.com/metrofolk" },
-                { Icon: Linkedin, href: "https://linkedin.com/company/metrofolk" },
+                { Icon: Facebook, href: "https://facebook.com/metrofolksolarenergy" },
+                { Icon: Instagram, href: "https://instagram.com/metrofolksolarenergy" },
+                { Icon: Twitter, href: "https://x.com/metrofolkenergy" },
               ].map(({ Icon, href }, i) => (
                 <a
                   key={i}
@@ -106,7 +104,9 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="border-t border-gray-400 mt-12 pt-8 text-center text-primary text-sm">
-          <p>© 2025 Metrofolk Ltd. All rights reserved. | powered by Eddea</p>
+          <p>© 2025 Metrofolk Ltd. All rights reserved. | powered by <Link href="www.eddea.org">
+                      Eddea
+                    </Link></p>
         </div>
       </div>
     </footer>
