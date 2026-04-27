@@ -5,6 +5,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 :root {
   --primary: #001F3F;
   --accent: #228B22;
