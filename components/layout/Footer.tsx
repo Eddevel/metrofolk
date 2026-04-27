@@ -104,7 +104,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="border-t border-gray-400 mt-12 pt-8 text-center text-primary text-sm">
-          <p>© 2026 Metrofolk Ltd. All rights reserved. | powered by <Link href="www.eddea.org">
+          <p>© {new Date().getFullYear()} Metrofolk Ltd. All rights reserved. | powered by <Link href="www.eddea.org">
                       Eddea
                     </Link></p>
         </div>
