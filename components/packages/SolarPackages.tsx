@@ -10,7 +10,7 @@ import { CheckCircle2, ArrowRight } from "lucide-react";
 
 const packages = [
   {
-    Power: "6KVA inverter",
+    power: "6KVA inverter",
     price: "₦3,949,999",
     combo: "4 unit of 620W Solar Panels + Inverter + 5kwh lithium Battery + Cables + Installation",
     popular: false,
