@@ -7,29 +7,30 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { CheckCircle2, ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 const packages = [
   {
     power: "6KVA",
-    price: "₦3,949,999",
+    price: "₦3,950,000",
     combo: "4 unit of 620W Solar Panels + Inverter + 5kwh lithium Battery + Cables + Installation",
     popular: false,
   },
   {
     power: "6KVA",
-    price: "₦4,949,999",
+    price: "₦4,950,000",
     combo: "6 unit of 620W Solar Panels + Inverter + 12kwh lithium Battery + Cables + Installation",
     popular: true,
   },
   {
     power: "8KVA",
-    price: "₦6,249,999",
+    price: "₦6,250,000",
     combo: "8 unit of 620W Solar Panels + Inverter + 12kwh lithium Battery + Cables + Installation",
     popular: false,
   },
   {
     power: "10KVA ",
-    price: "₦7,349,999",
+    price: "₦7,350,000",
     combo: "10 unit of 620W Solar Panels + Inverter + 15kwh lithium Battery + Cables + Installation",
     popular: false,
   },
@@ -115,6 +116,23 @@ export default function SolarPackages() {
             </motion.div>
           ))}
         </div>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10 max-w-7xl mx-auto">
+        <Image
+          src="/images/solarp1.jpeg"
+          alt="Solar Panel"
+          className="w-full h-full object-cover"
+        />
+        <Image
+          src="/images/solarp2.jpeg"
+          alt="Solar Panel"
+          className="w-full h-full object-cover"
+        />
+        <Image
+          src="/images/solarp3.jpeg"
+          alt="Solar Panel"
+          className="w-full h-full object-cover"
+        />
       </div>
     </section>
   );
