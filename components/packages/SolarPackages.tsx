@@ -10,27 +10,27 @@ import { CheckCircle2, ArrowRight } from "lucide-react";
 
 const packages = [
   {
-    kva: "1.5kVA",
-    price: "₦899,999",
-    appliances: "Lights, Fans, TV, Laptop, Phone Charging",
+    Power: "6KW inverter",
+    price: "₦3,949,999",
+    combo: "4 unit of 620W Solar Panels + Inverter + 5kwh lithium Battery + Cables + Installation",
     popular: false,
   },
   {
-    kva: "3kVA",
-    price: "₦1,899,000",
-    appliances: "Fridge, Fans, TV, Washing Machine",
+    power: "6KW inverter",
+    price: "₦4,949,999",
+    combo: "6 unit of 620W Solar Panels + Inverter + 12kwh lithium Battery + Cables + Installation",
     popular: true,
   },
   {
-    kva: "5kVA",
-    price: "₦4,599,000",
-    appliances: "1 Inverter AC, Freezer, Washing Machine, Full Lighting",
+    power: "8KW inverter",
+    price: "₦6,249,999",
+    combo: "8 unit of 620W Solar Panels + Inverter + 12kwh lithium Battery + Cables + Installation",
     popular: false,
   },
   {
-    kva: "10kVA",
-    price: "₦7,499,000+",
-    appliances: "Whole Home/Business, Heavy Machines, Office Use",
+    power: "10KW inverter",
+    price: "₦7,349,999",
+    combo: "10 unit of 620W Solar Panels + Inverter + 15kwh lithium Battery + Cables + Installation",
     popular: false,
   },
 ];
@@ -76,7 +76,7 @@ export default function SolarPackages() {
 
               <Card className={`h-full overflow-hidden border-2 transition-all duration-500 hover:border-primary hover:shadow-2xl bg-card/95 backdrop-blur ${pkg.popular ? "ring-4 ring-primary/20 shadow-xl" : "shadow-lg"}`}>
                 <CardHeader className="text-center bg-gradient-to-b from-primary/10 to-transparent">
-                  <div className="text-5xl font-black text-primary mb-2">{pkg.kva}</div>
+                  <div className="text-5xl font-black text-primary mb-2">{pkg.power}</div>
                   <CardDescription className="text-lg">Complete System</CardDescription>
                 </CardHeader>
 
@@ -87,7 +87,7 @@ export default function SolarPackages() {
 
                   <div className="text-center">
                     <p className="text-sm text-muted-foreground font-medium mb-2">Powers:</p>
-                    <p className="text-foreground font-medium">{pkg.appliances}</p>
+                    <p className="text-foreground font-medium">{pkg.combo}</p>
                   </div>
 
                   <ul className="space-y-3">

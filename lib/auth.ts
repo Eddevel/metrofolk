@@ -26,7 +26,7 @@ interface CustomUser {
   role: "admin" | "user";
 }
 
-const ADMIN_EMAIL = "your-real-email@gmail.com"; // ← CHANGE TO YOUR GMAIL
+const ADMIN_EMAIL = "eddeawebdeveloper@gmail.com"; // ← CHANGE TO YOUR GMAIL
 
 export function useAuth() {
   const [user, setUser] = useState<CustomUser | null>(null);
