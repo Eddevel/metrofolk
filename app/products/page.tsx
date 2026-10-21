@@ -49,6 +49,7 @@ export default function ProductsPage() {
       { slug: "loose-components-retail", title: "Loose Electrical Components", iconName: "home", color: "text-green-600", bg: "bg-green-50", description: "MCBs, cables, sockets", count: "Loading..." },
       { slug: "green-energy", title: "Green Energy Solutions", iconName: "sun", color: "text-yellow-600", bg: "bg-yellow-50", description: "Solar panels, inverters", count: "Loading..." },
       { slug: "packaged-equipment", title: "Packaged Equipment", iconName: "battery", color: "text-red-600", bg: "bg-red-50", description: "Generators, UPS, pumps", count: "Loading..." },
+      { slug: "packages", title: "Solar Packages", iconName: "package", color: "text-brown-600", bg: "bg-brown-50", description: "Complete solar systems", count: "Loading..." },
     ];
 
     const fetchCounts = async () => {
