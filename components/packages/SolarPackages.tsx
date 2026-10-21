@@ -10,25 +10,25 @@ import { CheckCircle2, ArrowRight } from "lucide-react";
 
 const packages = [
   {
-    Power: "6KW inverter",
+    Power: "6KVA inverter",
     price: "₦3,949,999",
     combo: "4 unit of 620W Solar Panels + Inverter + 5kwh lithium Battery + Cables + Installation",
     popular: false,
   },
   {
-    power: "6KW inverter",
+    power: "6KVA",
     price: "₦4,949,999",
     combo: "6 unit of 620W Solar Panels + Inverter + 12kwh lithium Battery + Cables + Installation",
     popular: true,
   },
   {
-    power: "8KW inverter",
+    power: "8KVA",
     price: "₦6,249,999",
     combo: "8 unit of 620W Solar Panels + Inverter + 12kwh lithium Battery + Cables + Installation",
     popular: false,
   },
   {
-    power: "10KW inverter",
+    power: "10KVA ",
     price: "₦7,349,999",
     combo: "10 unit of 620W Solar Panels + Inverter + 15kwh lithium Battery + Cables + Installation",
     popular: false,
@@ -86,7 +86,7 @@ export default function SolarPackages() {
                   </div>
 
                   <div className="text-center">
-                    <p className="text-sm text-muted-foreground font-medium mb-2">Powers:</p>
+                    <p className="text-sm text-muted-foreground font-medium mb-2">Package Combo:</p>
                     <p className="text-foreground font-medium">{pkg.combo}</p>
                   </div>
 
