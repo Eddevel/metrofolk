@@ -104,7 +104,7 @@ export default function SolarPackages() {
                 <CardFooter className="pt-6">
                   <Button asChild size="lg" className="w-full h-10 font-semibold bg-[#4ca626]">
                    <Link 
-                      href="/shop?category=packages&power=6kva"
+                      href="/products/packages"
                       className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#4ca626] to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold  rounded-2xl shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                     >
                       Get This Solar Package
